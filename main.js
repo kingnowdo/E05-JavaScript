@@ -23,3 +23,12 @@ function xadrez(){
         console.log(tex);
     }
 }
+
+function palindromo(){
+    var user = prompt("Insira uma frase");
+    var tex = '';
+    for(var i =0; i<user.length; i = i+1){
+        tex= tex + user.charAt(user.length-(i+1));
+    }
+    if(tex==user) console.log("sim, é um palíndromo")
+}
